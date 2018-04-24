@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp10"
+    app:cardCornerRadius="@dimen/dp5"
+    app:cardElevation="@dimen/dp5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_institute_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp17"
+            tools:text="Institute Name" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_institute_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_institute_name"
+            android:layout_marginTop="@dimen/dp8"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp14"
+            tools:text="Institute Address" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_institute_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_institute_address"
+            android:layout_marginTop="@dimen/dp8"
+            android:textSize="@dimen/sp14"
+            tools:text="Institute Description" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_institute_description"
+            android:layout_marginTop="@dimen/dp8"
+            android:maxLines="1"
+            android:text="@string/phone"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp16" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_institute_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/tv_phone"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_toEndOf="@id/tv_phone"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp14"
+            tools:text="9876543210" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone"
+            android:layout_marginTop="@dimen/dp8"
+            android:maxLines="1"
+            android:text="@string/email"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp16" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_institute_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@id/tv_institute_phone"
+            android:layout_alignTop="@id/tv_email"
+            android:layout_toEndOf="@id/tv_email"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp14"
+            tools:text="email@email.com" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_institute_courses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_institute_email"
+            android:layout_marginTop="@dimen/dp15"
+            android:maxLines="1"
+            android:text="@string/courses_available"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp16" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_total_courses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_institute_courses"
+            android:layout_marginTop="@dimen/dp8"
+            android:textSize="@dimen/sp14"
+            tools:text="Computer Science" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.databasetaskmvp.homepage.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrey"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingEnd="@dimen/dp10"
+        android:paddingStart="@dimen/dp10"
+        android:paddingTop="@dimen/dp10">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_search" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/iv_search"
+            android:background="@null"
+            android:hint="@string/search_institutes"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/dp10"
+            android:paddingStart="@dimen/dp10"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp15" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_institutes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_search" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fb_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:src="@drawable/ic_add"
+        app:fabSize="normal" />
+
+
+</RelativeLayout>
